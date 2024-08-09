@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
 :root {
-    --primary: #887443;
-    --secondary: #d1995859;
-    --bg-link: #caae7073;
-    --bg-card: #eec49326;
-    --bg-nav: #8a630026;
+    --primary: rgb(136, 116, 67);
+    --secondary: rgba(209, 153, 88, 0.349);
+    --bg-link: rgba(202, 174, 112, 0.451);
+    --bg-card: rgba(238, 196, 147, 0.149);
+    --bg-nav: rgba(138, 99, 0, 0.149);
     --shadow-dark: .25rem .25rem .25rem 0 rgba(0, 0, 0, 0.2);
     --box-shadow-card: inset 5px 5px 4px 0px rgba(136, 116, 67, 0.4);
 
