@@ -390,7 +390,8 @@
     }
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1460px) {
     #contact {
         padding: 0.5rem;
         margin: 2rem;

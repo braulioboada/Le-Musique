@@ -1,0 +1,116 @@
+footer {
+    background-color: var(--bg-nav);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+
+
+    & div {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+
+        & nav {
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+
+            & a {
+                font-family: var(--text);
+                font-size: 1.8rem;
+                font-weight: 900;
+                text-decoration: none;
+                color: var(--text-dark);
+                text-transform: uppercase;
+            }
+        }
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            & h2 {
+                font-family: var(--text);
+                font-size: 1.8rem;
+                font-weight: 900;
+                text-decoration: none;
+                color: var(--text-dark);
+            }
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                flex-wrap: wrap;
+                list-style: none;
+
+                & li {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: start;
+                    gap: .5rem;
+
+                    & span {
+                        font-weight: 900;
+                    }
+
+                }
+            }
+        }
+    }
+
+    & article {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        & p {
+            font-family: var(--text);
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        & a {
+            font-family: var(--text);
+            font-size: 1rem;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    footer {
+        & div {
+            flex-wrap: wrap;
+
+            & picture {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    footer {
+        & div {
+
+            & nav {
+                align-items: center;
+            }
+
+            & article {
+                align-items: center;
+
+                & ul {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
