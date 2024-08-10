@@ -23,47 +23,51 @@
       <a href="catalog.html">Percusión</a>
       <a href="catalog.html">Accesorios</a>
     </nav>
-    <form id="user">
-      <label for="btn_user">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#887443"
-          stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round">
-          <path d="M18 21a8 8 0 0 0-16 0" />
-          <circle cx="10" cy="8" r="5" />
-          <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
-        </svg>
-      </label>
-      <input type="checkbox" id="btn_user">
-      <nav>
-        <a href="login.html">Iniciar Sesión</a>
-        <a href="register.html">Registro</a>
-      </nav>
-      <a id="carrito" href="cart.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#887443"
-          stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart">
-          <circle cx="8" cy="21" r="1" />
-          <circle cx="19" cy="21" r="1" />
-          <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-        </svg>
-      </a>
-    </form>
-    <form action="#" id="mobile_nav">
-      <label for="menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#887443"
-          stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
-          <line x1="4" x2="20" y1="12" y2="12" />
-          <line x1="4" x2="20" y1="6" y2="6" />
-          <line x1="4" x2="20" y1="18" y2="18" />
-        </svg>
-      </label>
-      <input type="checkbox" id="menu">
-      <nav>
-        <a href="catalog.html">Cuerdas</a>
-        <a href="catalog.html">Viento Madera</a>
-        <a href="catalog.html">Viento Metal</a>
-        <a href="catalog.html">Percusión</a>
-        <a href="catalog.html">Accesorios</a>
-      </nav>
-    </form>
+    <div id="menus">
+      <form id="user">
+        <label for="btn_user">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="#887443" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-users-round">
+            <path d="M18 21a8 8 0 0 0-16 0" />
+            <circle cx="10" cy="8" r="5" />
+            <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+          </svg>
+        </label>
+        <input type="checkbox" id="btn_user">
+        <nav>
+          <a href="login.html">Iniciar Sesión</a>
+          <a href="register.html">Registro</a>
+        </nav>
+        <a id="carrito" href="cart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="#887443" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-shopping-cart">
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+          </svg>
+        </a>
+      </form>
+      <form action="#" id="mobile_nav">
+        <label for="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+            stroke="#887443" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav>
+          <a href="catalog.html">Cuerdas</a>
+          <a href="catalog.html">Viento Madera</a>
+          <a href="catalog.html">Viento Metal</a>
+          <a href="catalog.html">Percusión</a>
+          <a href="catalog.html">Accesorios</a>
+        </nav>
+      </form>
+    </div>
   </header>
   <main id="hero">
     <h1>La Musique c'est la meilleure chose de la Vie</h1>
@@ -137,16 +141,11 @@
     </ul>
   </section>
   <section id="about_us">
-    <header>
-      <h2>ARMONIZA TUS MELODÍAS Y DESCUBRE LA AFINACIÓN PERFECTA QUE ESTABAS BUSCANDO</h2>
-    </header>
-    <article>
-      <p>“Bienvenido a nuestra tienda de instrumentos musicales especializada". Aquí encontrarás una amplia selección de
-        violines,violonchelos, contrabajos, flautas, clarinetes, trompetas, trombones y más. Nuestro compromiso es
-        ofrecerte la mejor calidad y variedad para que puedas expresarte a través de la música.
-      </p>
-      <a href="#">Mas Información</a>
-    </article>
+    <h2>ARMONIZA TUS MELODÍAS Y DESCUBRE LA AFINACIÓN PERFECTA QUE ESTABAS BUSCANDO</h2>
+    <p>“Bienvenido a nuestra tienda de instrumentos musicales especializada". Aquí encontrarás una amplia selección de
+      violines,violonchelos, contrabajos, flautas, clarinetes, trompetas, trombones y más. Nuestro compromiso es
+      ofrecerte la mejor calidad y variedad para que puedas expresarte a través de la música.
+    </p>
   </section>
   <section id="product">
     <h2>Novedades</h2>
