@@ -4,7 +4,7 @@
 
 :root {
     --primary: rgb(136, 116, 67);
-    --secondary: rgba(209, 153, 88, 0.349);
+    --secondary: rgba(209, 152, 87, 0.349);
     --bg-link: rgba(202, 174, 112, 0.451);
     --bg-card: rgba(238, 196, 147, 0.149);
     --bg-nav: rgba(138, 99, 0, 0.149);
@@ -14,8 +14,9 @@
 
     /*Texto*/
 
+
     --text-dark: #000000;
-    --text-white: #f0f0f0;
+    --text-white: #ffffff;
     --text-1: #b29244;
 
     --title: 'Oswald', sans-serif;
@@ -42,5 +43,4 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    gap: 2rem;
 }
