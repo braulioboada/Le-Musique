@@ -6,12 +6,16 @@
     display: flex;
     width: 100vw;
     height: 90vh;
+    background-color: brown;
     background: url(/assets/img/banner.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 
     & h1 {
-        margin: 8rem;
+        position: absolute;
+        top: 8rem;
+        left: 2rem;
         font-family: Beau Rivage;
         text-align: center;
         align-items: center;
@@ -24,11 +28,11 @@
 @media (max-width: 900px) {
     #hero {
         height: 40vh;
-        background-size: contain;
 
         & h1 {
-            margin: 5rem 0.5rem;
-            font-size: 2.3em;
+            font-size: 2.3rem;
+            top: 6.5rem;
+            left: 2rem;
         }
     }
 }
@@ -44,13 +48,13 @@
 #info {
     display: flex;
     justify-content: space-evenly;
-    padding: 4rem;
 
 
     & ul {
         display: flex;
         justify-content: center;
         gap: 2.5rem;
+        flex-wrap: wrap;
 
         & li {
             display: flex;
@@ -85,6 +89,16 @@
                     color: var(--primary);
                     font-weight: 500;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1510px) {
+    #info {
+        & ul {
+            & li {
+                width: calc(100% / 2 - 2.5rem);
             }
         }
     }
@@ -158,6 +172,8 @@
 
 @media (max-width: 900px) {
     #about_us {
+        flex-direction: column;
+
         & h2 {
             font-size: 2rem;
         }
@@ -173,7 +189,6 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin-top: 3rem;
 
     & h2 {
         font-weight: 900;
@@ -185,9 +200,8 @@
 
     & ul {
         display: grid;
-        grid-row: 2;
         grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(3, 550px);
+        grid-template-rows: repeat(2, 550px);
         gap: 5rem;
 
         & li {

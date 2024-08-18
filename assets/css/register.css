@@ -6,26 +6,25 @@ body {
     background-image: url(/assets/img/bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(4px);
+
 }
 
 #nav {
     background-color: var(--bg-nav-brown);
-    position: initial;
 }
 
 section {
     width: 100vw;
-    height: 45.7vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    position: ;
+    backdrop-filter: blur(4px) grayscale(30%);
 
     & article {
         display: flex;
-        width: 60vw;
+        width: 70vw;
         height: 565px;
         justify-content: center;
         align-items: center;
@@ -109,4 +108,28 @@ section {
             }
         }
     }
+}
+
+@media (max-width: 1366px) {
+
+    section {
+        & article {
+            width: calc(100% - 2rem);
+
+            & picture {
+                display: none;
+            }
+
+            & form {
+                width: 70%;
+                background-color: rgba(204, 187, 145, 0.459);
+            }
+        }
+    }
+
+
+}
+
+::selection {
+    background: transparent;
 }

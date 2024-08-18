@@ -9,7 +9,7 @@ footer {
     z-index: 1;
 
 
-    & div {
+    & section {
         display: flex;
         justify-content: space-around;
         gap: 3rem;
@@ -87,7 +87,7 @@ footer {
 
 @media (max-width: 1024px) {
     footer {
-        & div {
+        & section {
             flex-wrap: wrap;
 
             & picture {
@@ -99,7 +99,7 @@ footer {
 
 @media (max-width: 540px) {
     footer {
-        & div {
+        & section {
 
             & nav {
                 align-items: center;
