@@ -6,6 +6,7 @@ footer {
     flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
+    z-index: 1;
 
 
     & div {
